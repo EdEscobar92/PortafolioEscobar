@@ -1,0 +1,94 @@
+.training {
+  padding: 80px 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.training__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #2d3436;
+}
+
+/* El contenedor de la línea */
+.training__timeline {
+  position: relative;
+  border-left: 3px solid #0984e3; /* La línea vertical azul */
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+/* Cada bloque de estudio */
+.training__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* El círculo en la línea */
+.training__dot {
+  position: absolute;
+  left: -41.5px; /* Centrado exacto sobre la línea de 3px */
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 4px solid #0984e3;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.training__dot--special {
+  background-color: #0984e3; /* Color sólido para destacar certificaciones */
+}
+
+/* Tarjeta de contenido */
+.training__content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.training__content:hover {
+  transform: translateX(10px); /* Se desplaza un poco a la derecha */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.training__degree {
+  font-size: 1.25rem;
+  color: #2d3436;
+  margin-bottom: 5px;
+}
+
+.training__status {
+  font-size: 0.9rem;
+  color: #00b894; /* Color verde para "En curso" */
+  font-weight: bold;
+}
+
+.training__institution {
+  color: #636e72;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Lista de certificaciones */
+.training__list {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #636e72;
+}
+
+.training__list li {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .training {
+    padding: 60px 5%;
+  }
+}

@@ -1,0 +1,64 @@
+.contact {
+  padding: 100px 10%;
+  background-color: #2d3436; /* Fondo oscuro para contrastar con el resto */
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Subrayado decorativo para el título de contacto */
+.contact__title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #00cec9; /* Un color turquesa/seguridad */
+  margin: 10px auto 0;
+}
+
+.contact__text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #dfe6e9;
+}
+
+.contact__address {
+  font-style: normal; /* Quita la cursiva por defecto de <address> */
+}
+
+/* El botón de acción */
+.contact__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #00cec9;
+  color: #2d3436;
+  padding: 18px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 206, 201, 0.3);
+}
+
+.contact__button:hover {
+  background-color: #ffffff;
+  color: #00cec9;
+  transform: scale(1.05); /* Crece un poquito */
+  box-shadow: 0 6px 20px rgba(0, 206, 201, 0.5);
+}
+
+.contact__button i {
+  font-size: 1.3rem;
+}

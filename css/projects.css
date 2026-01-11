@@ -1,0 +1,89 @@
+.projects {
+  padding: 80px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2d3436;
+}
+
+/* Grid de proyectos */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjeta del proyecto */
+.projects__card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden; /* Corta la imagen si sobresale de los bordes redondeados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.projects__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor de imagen / placeholder */
+.projects__image-container {
+  height: 200px;
+  background: linear-gradient(135deg, #0984e3, #6c5ce7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__placeholder-icon {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Cuerpo de la tarjeta */
+.projects__content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projects__card-title {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #2d3436;
+}
+
+.projects__description {
+  font-size: 1rem;
+  color: #636e72;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Footer y Etiquetas (Badges) */
+.projects__footer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.projects__tag {
+  background: #f1f2f6;
+  color: #0984e3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(9, 132, 227, 0.1);
+}

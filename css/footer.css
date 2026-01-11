@@ -1,0 +1,38 @@
+.footer {
+  background-color: #1e272e; /* Un tono más oscuro que el contacto */
+  padding: 40px 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria muy suave */
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__copy {
+  color: #808e9b; /* Color gris suave para que no compita con el contenido principal */
+  font-size: 0.95rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.footer__copy strong {
+  color: #ffffff; /* Tu nombre destaca en blanco */
+  font-weight: 600;
+}
+
+.footer__divider {
+  margin: 0 10px;
+  color: #00cec9; /* El color de acento que usamos en el botón de contacto */
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer__divider {
+    display: block; /* En móviles, el separador hace que el texto baje */
+    height: 10px;
+    visibility: hidden;
+  }
+}
